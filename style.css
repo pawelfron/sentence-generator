@@ -1,0 +1,62 @@
+.disabled {
+    display: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.parts-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.window {
+    width: 450px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    padding: 25px 10px;
+}
+
+.window-header {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.window-header::first-letter {
+    font-weight: bold;
+}
+
+.middle-part {
+    height: 100px;
+}
+
+.window fieldset {
+    font-size: 0.75em;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.input-fields {
+    text-align: center;
+}
+
+.select-input {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.text-input {
+    width: 125px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}

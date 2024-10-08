@@ -7,7 +7,101 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <form id="generatorForm">
+            <div class="parts-container">
+                <div class="window subject">
+                    <div class="window-header">Subject</div>
 
+                    <div class="middle-part">
+                        <fieldset>
+                            <div>
+                                <input type="radio" id="subject1" name="subjectType" value="pronoun" checked>
+                                <label for="subject1">Pronoun</label>
+    
+                                <input type="radio" id="subject2" name="subjectType" value="noun">
+                                <label for="subject2">Noun</label>
+    
+                                <input type="radio" id="subject3" name="subjectType" value="nounAdjective">
+                                <label for="subject3">Noun + Adjective</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="input-fields">
+                        <select id="subject-pronoun" class="select-input" name="subjectPronoun">
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                        </select>
+
+                        <select id="subject-addition" class="select-input disabled" name="subjectAddition">
+                            <option value="lorem">Lorem</option>
+                            <option value="ipsum">Ipsum</option>
+                            <option value="dolor">Dolor</option>
+                            <option value="sit">Sit</option>
+                        </select>
+
+                        <input type="text" id="subject-adjective" class="text-input disabled" name="subjectAdjective" placeholder="Write an adjective">
+                        <input type="text" id="subject-noun" class="text-input disabled" name="subjectNoun" placeholder="Write a noun">
+                    </div>
+                </div>
+                <div class="window verb">
+                    <div class="window-header">Verb</div>
+
+                    <div class="middle-part"></div>
+
+                    <div class="input-fields">
+                        <select class="select-input" name="tense">
+                            <option value="present">Present</option>
+                            <option value="past">Past</option>
+                            <option value="future">Future</option>
+                        </select>
+
+                        <input type="text" class="text-input" name="verb" placeholder="Write a verb">
+                    </div>
+                </div>
+                <div class="window object">
+                    <div class="window-header">Object</div>
+
+                    <div class="middle-part">
+                        <fieldset>
+                            <div>
+                                <input type="radio" id="object1" name="objectType" value="pronoun" checked>
+                                <label for="object1">Pronoun</label>
+
+                                <input type="radio" id="object2" name="objectType" value="noun">
+                                <label for="object2">Noun</label>
+
+                                <input type="radio" id="object3" name="objectType" value="nounAdjective">
+                                <label for="object3">Noun + Adjective</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="input-fields">
+                        <select id="object-pronoun" class="select-input" name="objectPronoun">
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                        </select>
+
+                        <select id="object-addition" class="select-input disabled" name="objectAddition">
+                            <option value="lorem">Lorem</option>
+                            <option value="ipsum">Ipsum</option>
+                            <option value="dolor">Dolor</option>
+                            <option value="sit">Sit</option>
+                        </select>
+
+                        <input type="text" id="object-adjective" class="text-input disabled" name="objectAdjective" placeholder="Write an adjective">
+                        <input type="text" id="object-noun" class="text-input disabled" name="objectNoun" placeholder="Write a noun">
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="Generate">
+        </form>
+
+        <script src="radios.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
