@@ -50,9 +50,15 @@
                             <option value="ilia">their</option>
                         </select>
 
-                        <input type="text" id="subject-adjective" class="text-input disabled" name="subjectAdjective" placeholder="Write an adjective">
-
-                        <input type="text" id="subject-noun" class="text-input disabled" name="subjectNoun" placeholder="Write a noun">
+                        <div id="subject-adjective-container" class="input-container">
+                            <input type="text" id="subject-adjective" class="text-input disabled" name="subjectAdjective" placeholder="Write an adjective">
+                            <ul id="subject-adjective-list" class="search-results disabled"></ul>
+                        </div>
+                        
+                        <div id="subject-noun-container" class="input-container">
+                            <input type="text" id="subject-noun" class="text-input disabled" name="subjectNoun" placeholder="Write a noun">
+                            <ul id="subject-noun-list" class="search-results disabled"></ul>
+                        </div>
 
                         <select id="subject-number" class="select-input disabled" name="subjectNumber">
                             <option value="singular">Singular</option>
@@ -79,7 +85,10 @@
                             <option value="negative">Negative</option>
                         </select>
 
-                        <input type="text" class="text-input" name="verb" placeholder="Write a verb">
+                        <div id="verb-container" class="input-container">
+                            <input type="text" id="verb" class="text-input" name="verb" placeholder="Write a verb">
+                            <ul id="verb-list" class="search-results disabled"></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="window object">
@@ -123,9 +132,15 @@
                             <option value="ilia">their</option>
                         </select>
 
-                        <input type="text" id="object-adjective" class="text-input disabled" name="objectAdjective" placeholder="Write an adjective">
+                        <div id="object-adjective-container" class="input-container">
+                            <input type="text" id="object-adjective" class="text-input disabled" name="objectAdjective" placeholder="Write an adjective">
+                            <ul id="object-adjective-list" class="search-results disabled"></ul>
+                        </div>
 
-                        <input type="text" id="object-noun" class="text-input disabled" name="objectNoun" placeholder="Write a noun">
+                        <div id="object-noun-container" class="input-container">
+                            <input type="text" id="object-noun" class="text-input disabled" name="objectNoun" placeholder="Write a noun">
+                            <ul id="object-noun-list" class="search-results disabled"></ul>
+                        </div>
 
                         <select id="object-number" class="select-input disabled" name="objectNumber">
                             <option value="singular">Singular</option>
@@ -142,6 +157,7 @@
 
         <script src="dictionary.js"></script>
         <script src="radios.js"></script>
+        <script src="search.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
