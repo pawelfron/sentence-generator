@@ -29,20 +29,35 @@
 
                     <div class="input-fields">
                         <select id="subject-pronoun" class="select-input" name="subjectPronoun">
-                            <option value="a">a</option>
-                            <option value="b">b</option>
-                            <option value="c">c</option>
+                            <option value="mi">I</option>
+                            <option value="vi">You</option>
+                            <option value="li">He</option>
+                            <option value="ŝi">She</option>
+                            <option value="ĝi">It</option>
+                            <option value="ni">We</option>
+                            <option value="ili">They</option>
                         </select>
 
                         <select id="subject-addition" class="select-input disabled" name="subjectAddition">
-                            <option value="lorem">Lorem</option>
-                            <option value="ipsum">Ipsum</option>
-                            <option value="dolor">Dolor</option>
-                            <option value="sit">Sit</option>
+                            <option value="none"><i>--none--</i></option>
+                            <option value="la">the</option>
+                            <option value="mia">my</option>
+                            <option value="via">your</option>
+                            <option value="lia">his</option>
+                            <option value="ŝia">her</option>
+                            <option value="ĝia">its</option>
+                            <option value="nia">our</option>
+                            <option value="ilia">their</option>
                         </select>
 
                         <input type="text" id="subject-adjective" class="text-input disabled" name="subjectAdjective" placeholder="Write an adjective">
+
                         <input type="text" id="subject-noun" class="text-input disabled" name="subjectNoun" placeholder="Write a noun">
+
+                        <select id="subject-number" class="select-input disabled" name="subjectNumber">
+                            <option value="singular">Singular</option>
+                            <option value="plural">Plural</option>
+                        </select>
                     </div>
                 </div>
                 <div class="window verb">
@@ -55,6 +70,13 @@
                             <option value="present">Present</option>
                             <option value="past">Past</option>
                             <option value="future">Future</option>
+                            <option value="conditional">Conditional</option>
+                            <option value="volitive">Volitive</option>
+                        </select>
+
+                        <select class="select-input" name="negation">
+                            <option value="positive">Positive</option>
+                            <option value="negative">Negative</option>
                         </select>
 
                         <input type="text" class="text-input" name="verb" placeholder="Write a verb">
@@ -80,20 +102,35 @@
 
                     <div class="input-fields">
                         <select id="object-pronoun" class="select-input" name="objectPronoun">
-                            <option value="a">a</option>
-                            <option value="b">b</option>
-                            <option value="c">c</option>
+                            <option value="mi">I</option>
+                            <option value="vi">You</option>
+                            <option value="li">He</option>
+                            <option value="ŝi">She</option>
+                            <option value="ĝi">It</option>
+                            <option value="ni">We</option>
+                            <option value="ili">They</option>
                         </select>
 
                         <select id="object-addition" class="select-input disabled" name="objectAddition">
-                            <option value="lorem">Lorem</option>
-                            <option value="ipsum">Ipsum</option>
-                            <option value="dolor">Dolor</option>
-                            <option value="sit">Sit</option>
+                            <option value="none"><i>--none--</i></option>
+                            <option value="la">the</option>
+                            <option value="mia">my</option>
+                            <option value="via">your</option>
+                            <option value="lia">his</option>
+                            <option value="ŝia">her</option>
+                            <option value="ĝia">its</option>
+                            <option value="nia">our</option>
+                            <option value="ilia">their</option>
                         </select>
 
                         <input type="text" id="object-adjective" class="text-input disabled" name="objectAdjective" placeholder="Write an adjective">
+
                         <input type="text" id="object-noun" class="text-input disabled" name="objectNoun" placeholder="Write a noun">
+
+                        <select id="object-number" class="select-input disabled" name="objectNumber">
+                            <option value="singular">Singular</option>
+                            <option value="plural">Plural</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -101,6 +138,9 @@
             <input type="submit" value="Generate">
         </form>
 
+        <div id="result"></div>
+
+        <script src="dictionary.js"></script>
         <script src="radios.js"></script>
         <script src="main.js"></script>
     </body>

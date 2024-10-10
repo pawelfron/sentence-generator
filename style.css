@@ -13,7 +13,7 @@ body {
 }
 
 .window {
-    width: 450px;
+    width: 475px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -59,4 +59,9 @@ body {
     border-width: 1px;
     border-radius: 5px;
     padding: 5px;
+}
+
+option i {
+    font-style: italic;
+    font-weight: lighter;
 }
