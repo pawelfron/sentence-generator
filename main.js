@@ -66,15 +66,11 @@ form.addEventListener('submit', event => {
     if (subjectType == 'pronoun') {
         subject = subjectPronoun;
     } else {
-        if (subjectAddition != 'none') {
-            subject = subjectAddition;
-            subject += ' ';
-        }
+        if (subjectAddition != 'none')
+            subject = subjectAddition + ' ';
         
-        if (subjectType == 'nounAdjective') {
-            subject += isSubjectPlural ? subjectAdjective + 'j' : subjectAdjective;
-            subject += ' ';
-        }
+        if (subjectType == 'nounAdjective')
+            subject += (isSubjectPlural ? subjectAdjective + 'j' : subjectAdjective) + ' ';
 
         subject += isSubjectPlural ? subjectNoun + 'j' : subjectNoun;
     }
@@ -100,18 +96,13 @@ form.addEventListener('submit', event => {
     if (objectType == 'pronoun') {
         object = objectPronoun + 'n';
     } else {
-        if (objectAddition == 'la') {
-            object = objectAddition;
-            object += ' ';
-        } else if (objectAddition != 'none') {
-            object = objectAddition + 'n';
-            object += ' ';
-        }
+        if (objectAddition == 'la')
+            object = objectAddition + ' ';
+        else if (objectAddition != 'none')
+            object = objectAddition + 'n ';
         
-        if (objectType == 'nounAdjective') {
-            object += (isObjectPlural ? objectAdjective + 'j' : objectAdjective) + 'n';
-            object += ' ';
-        }
+        if (objectType == 'nounAdjective')
+            object += (isObjectPlural ? objectAdjective + 'j' : objectAdjective) + 'n ';
 
         object += (isObjectPlural ? objectNoun + 'j' : objectNoun) + 'n';
     }
