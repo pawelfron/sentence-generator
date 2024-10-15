@@ -101,3 +101,23 @@ option i {
 .translation {
     color: #777;
 }
+
+.generate-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.5em;
+    display: block;
+}
+
+#result {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
